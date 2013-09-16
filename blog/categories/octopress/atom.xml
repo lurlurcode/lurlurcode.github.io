@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Lur Lur Bear]]></title>
   <link href="http://lurlurcode.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://lurlurcode.github.io/"/>
-  <updated>2013-09-16T17:38:10+08:00</updated>
+  <updated>2013-09-16T18:09:51+08:00</updated>
   <id>http://lurlurcode.github.io/</id>
   <author>
     <name><![CDATA[Lur Lur Bear]]></name>
@@ -18,26 +18,36 @@
     <link href="http://lurlurcode.github.io/blog/2013/09/16/how-to-set-up-octopress-ontop-of-windows-and-hosting-in-github/"/>
     <updated>2013-09-16T17:09:00+08:00</updated>
     <id>http://lurlurcode.github.io/blog/2013/09/16/how-to-set-up-octopress-ontop-of-windows-and-hosting-in-github</id>
-    <content type="html"><![CDATA[<p>set up in github</p>
+    <content type="html"><![CDATA[<h3>create github page</h3>
 
-<p>create github page</p>
+<p>create a github account if no account
+create a repository which math a special patten: [github_account].github.io
+browse on [github_account].github.io, a dummy page will be showed.</p>
 
-<p>install octpress</p>
+<h3>install octpress</h3>
 
-<p>install theme</p>
+<p>checkout source code of octopress from github
+install dependency libraies through: bundle install
+install the framework through: rake install</p>
 
-<p>create new post</p>
+<h3>install theme</h3>
 
-<p>deploy to github</p>
+<h3>create new post</h3>
 
-<p>support code block highlight</p>
+<h3>deploy to github</h3>
 
-<p>install python</p>
+<h3>support code block highlight</h3>
 
-<p>reference:
-+<a href="http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/">http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/</a>
-+<a href="http://walkerrandolphsmith.com/blog/2013/01/20/octopress-syntax-highlighting/">http://walkerrandolphsmith.com/blog/2013/01/20/octopress-syntax-highlighting/</a>
-+<a href="http://octopress.org/docs/">http://octopress.org/docs/</a></p>
+<h3>install python</h3>
+
+<h3>reference:</h3>
+
+<ul>
+<li><a href="http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/">http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/</a></li>
+<li><a href="http://walkerrandolphsmith.com/blog/2013/01/20/octopress-syntax-highlighting/">http://walkerrandolphsmith.com/blog/2013/01/20/octopress-syntax-highlighting/</a></li>
+<li><a href="http://octopress.org/docs/">http://octopress.org/docs/</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
