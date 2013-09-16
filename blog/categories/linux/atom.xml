@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Lur Lur Bear]]></title>
+  <link href="http://lurlurcode.github.io/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://lurlurcode.github.io/"/>
+  <updated>2013-09-16T17:38:10+08:00</updated>
+  <id>http://lurlurcode.github.io/</id>
+  <author>
+    <name><![CDATA[Lur Lur Bear]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to create passwordless login]]></title>
+    <link href="http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login/"/>
+    <updated>2013-09-16T14:38:00+08:00</updated>
+    <id>http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login</id>
+    <content type="html"><![CDATA[<p>generate public-private key pair if it is not existed.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh-keygen -t rsa</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>copy public key to target machine:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh-copy-id [-i [identity_file]] [user@]machine</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>testing
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh [user@]machine</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>running command and yield back shell through ssh:
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh [user@]machine -t &lsquo;some comand; bash&rsquo;</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>

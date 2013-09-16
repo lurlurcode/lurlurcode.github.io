@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: ruby | Lur Lur Bear]]></title>
+  <title><![CDATA[Category: Ruby | Lur Lur Bear]]></title>
   <link href="http://lurlurcode.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://lurlurcode.github.io/"/>
-  <updated>2013-09-16T16:57:01+08:00</updated>
+  <updated>2013-09-16T17:38:10+08:00</updated>
   <id>http://lurlurcode.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Lur Lur Bear]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

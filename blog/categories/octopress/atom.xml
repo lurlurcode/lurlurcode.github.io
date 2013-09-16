@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Lur Lur Bear]]></title>
+  <link href="http://lurlurcode.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://lurlurcode.github.io/"/>
+  <updated>2013-09-16T17:38:10+08:00</updated>
+  <id>http://lurlurcode.github.io/</id>
+  <author>
+    <name><![CDATA[Lur Lur Bear]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to set up Octopress ontop of Windows and hosting in Github]]></title>
+    <link href="http://lurlurcode.github.io/blog/2013/09/16/how-to-set-up-octopress-ontop-of-windows-and-hosting-in-github/"/>
+    <updated>2013-09-16T17:09:00+08:00</updated>
+    <id>http://lurlurcode.github.io/blog/2013/09/16/how-to-set-up-octopress-ontop-of-windows-and-hosting-in-github</id>
+    <content type="html"><![CDATA[<p>set up in github</p>
+
+<p>create github page</p>
+
+<p>install octpress</p>
+
+<p>install theme</p>
+
+<p>create new post</p>
+
+<p>deploy to github</p>
+
+<p>support code block highlight</p>
+
+<p>install python</p>
+
+<p>reference:
++<a href="http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/">http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/</a>
++<a href="http://walkerrandolphsmith.com/blog/2013/01/20/octopress-syntax-highlighting/">http://walkerrandolphsmith.com/blog/2013/01/20/octopress-syntax-highlighting/</a>
++<a href="http://octopress.org/docs/">http://octopress.org/docs/</a></p>
+]]></content>
+  </entry>
+  
+</feed>
