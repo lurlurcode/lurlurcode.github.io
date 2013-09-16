@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Lur Lur Bear</title>
+  <title>How to create passwordless login - Lur Lur Bear</title>
   <meta name="author" content="Your Name">
 
   
@@ -20,7 +20,7 @@ ssh-copy-id [-i [identity_file]] [ &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lurlurcode.github.io">
+  <link rel="canonical" href="http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Lur Lur Bear" type="application/atom+xml">
@@ -65,15 +65,12 @@ ssh-copy-id [-i [identity_file]] [ &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/09/16/how-to-create-passwordless-login/">How to Create Passwordless Login</a></h1>
+      <h1 class="entry-title">How to Create Passwordless Login</h1>
     
     
       <p class="meta">
@@ -96,7 +93,7 @@ ssh-copy-id [-i [identity_file]] [ &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>generate public-private key pair if it is not existed.</p>
+<div class="entry-content"><p>generate public-private key pair if it is not existed.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>ssh-keygen -t rsa</span></code></pre></td></tr></table></div></figure>
@@ -122,22 +119,16 @@ ssh-copy-id [-i [identity_file]] [ &hellip;">
 
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/09/16/how-to-send-mail-using-ruby/">How to Send Mail Using Ruby</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
 
 
 
@@ -149,64 +140,32 @@ ssh-copy-id [-i [identity_file]] [ &hellip;">
   
 
 
-<time datetime="2013-09-16T13:59:00+08:00" pubdate data-updated="true">Sep 16<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-09-16T14:38:00+08:00" pubdate data-updated="true">Sep 16<span>th</span>, 2013</time>
+      
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content">
-
-<figure class='code'><figcaption><span>How to send mail using ruby </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">send_mail</span> <span class="p">(</span><span class="n">mail_addr</span><span class="p">,</span> <span class="n">mail_content</span><span class="p">)</span>
-</span><span class='line'>  <span class="n">mail_server</span><span class="o">=</span> <span class="s2">&quot;YYY.com&quot;</span> <span class="c1">#SMTP server/exchange server</span>
-</span><span class='line'>  <span class="no">Mail</span><span class="o">.</span><span class="n">defaults</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">delivery_method</span> <span class="ss">:smtp</span><span class="p">,</span> <span class="p">{</span> <span class="ss">:address</span> <span class="o">=&gt;</span> <span class="n">mail_server</span><span class="p">,</span>
-</span><span class='line'>                             <span class="ss">:openssl_verify_mode</span> <span class="o">=&gt;</span> <span class="ss">OpenSSL</span><span class="p">:</span><span class="ss">:SSL</span><span class="o">::</span><span class="no">VERIFY_NONE</span><span class="p">,</span>
-</span><span class='line'>                             <span class="ss">:enable_starttls_auto</span> <span class="o">=&gt;</span> <span class="kp">true</span>
-</span><span class='line'>                           <span class="p">}</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="no">Mail</span><span class="o">.</span><span class="n">deliver</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">from</span> <span class="s1">&#39;testing &lt;XXX@YYY.com&gt;&#39;</span>
-</span><span class='line'>    <span class="n">to</span> <span class="n">mail_addr</span>
-</span><span class='line'>    <span class="n">subject</span> <span class="n">mail_content</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>usage:
-send_mail (receiver_address, &ldquo;bababa&hellip;&hellip;&rdquo;)</p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login/" data-via="" data-counturl="http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/09/16/how-to-send-mail-using-ruby/" title="Previous Post: How to send mail using ruby">&laquo; How to send mail using ruby</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -230,6 +189,7 @@ send_mail (receiver_address, &ldquo;bababa&hellip;&hellip;&rdquo;)</p>
 
   
 </aside>
+
 
     </div>
   </div>

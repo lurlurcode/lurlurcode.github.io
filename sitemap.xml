@@ -1,12 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://lurlurcode.github.io/blog/2013/09/16/how-to-send-mail-using-ruby/</loc>
+        <lastmod>2013-09-16T16:20:27+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login/</loc>
+        <lastmod>2013-09-16T14:44:38+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://lurlurcode.github.io/blog/archives/</loc>
-        <lastmod>2013-09-16T12:56:41+08:00</lastmod>
+        <lastmod>2013-09-16T16:20:27+08:00</lastmod>
     </url>
     <url>
         <loc>http://lurlurcode.github.io/</loc>
-        <lastmod>2013-09-16T12:56:41+08:00</lastmod>
+        <lastmod>2013-09-16T16:20:27+08:00</lastmod>
     </url>
     <url>
         <loc>http://lurlurcode.github.io/robots.txt</loc>

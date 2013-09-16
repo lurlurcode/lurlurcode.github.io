@@ -4,7 +4,7 @@
   <title><![CDATA[Lur Lur Bear]]></title>
   <link href="http://lurlurcode.github.io/atom.xml" rel="self"/>
   <link href="http://lurlurcode.github.io/"/>
-  <updated>2013-09-16T13:46:53+08:00</updated>
+  <updated>2013-09-16T16:52:47+08:00</updated>
   <id>http://lurlurcode.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to create passwordless login]]></title>
+    <link href="http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login/"/>
+    <updated>2013-09-16T14:38:00+08:00</updated>
+    <id>http://lurlurcode.github.io/blog/2013/09/16/how-to-create-passwordless-login</id>
+    <content type="html"><![CDATA[<p>generate public-private key pair if it is not existed.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh-keygen -t rsa</span></code></pre></td></tr></table></div></figure>
+
+
+<p>copy public key to target machine:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh-copy-id [-i [identity_file]] [user@]machine</span></code></pre></td></tr></table></div></figure>
+
+
+<p>testing</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh [user@]machine</span></code></pre></td></tr></table></div></figure>
+
+
+<p>running command and yield back shell through ssh:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh [user@]machine -t 'some comand; bash'</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to send mail using ruby]]></title>
+    <link href="http://lurlurcode.github.io/blog/2013/09/16/how-to-send-mail-using-ruby/"/>
+    <updated>2013-09-16T13:59:00+08:00</updated>
+    <id>http://lurlurcode.github.io/blog/2013/09/16/how-to-send-mail-using-ruby</id>
+    <content type="html"><![CDATA[
+
+<figure class='code'><figcaption><span>How to send mail using ruby </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">send_mail</span> <span class="p">(</span><span class="n">mail_addr</span><span class="p">,</span> <span class="n">mail_content</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">mail_server</span><span class="o">=</span> <span class="s2">&quot;YYY.com&quot;</span> <span class="c1">#SMTP server/exchange server</span>
+</span><span class='line'>  <span class="no">Mail</span><span class="o">.</span><span class="n">defaults</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">delivery_method</span> <span class="ss">:smtp</span><span class="p">,</span> <span class="p">{</span> <span class="ss">:address</span> <span class="o">=&gt;</span> <span class="n">mail_server</span><span class="p">,</span>
+</span><span class='line'>                             <span class="ss">:openssl_verify_mode</span> <span class="o">=&gt;</span> <span class="ss">OpenSSL</span><span class="p">:</span><span class="ss">:SSL</span><span class="o">::</span><span class="no">VERIFY_NONE</span><span class="p">,</span>
+</span><span class='line'>                             <span class="ss">:enable_starttls_auto</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+</span><span class='line'>                           <span class="p">}</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="no">Mail</span><span class="o">.</span><span class="n">deliver</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">from</span> <span class="s1">&#39;testing &lt;XXX@YYY.com&gt;&#39;</span>
+</span><span class='line'>    <span class="n">to</span> <span class="n">mail_addr</span>
+</span><span class='line'>    <span class="n">subject</span> <span class="n">mail_content</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>usage:
+send_mail (receiver_address, &ldquo;bababa&hellip;&hellip;&rdquo;)</p>
+]]></content>
+  </entry>
   
 </feed>
